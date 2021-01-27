@@ -1,11 +1,16 @@
+var randomColor = Math.floor(Math.random()*16777215).toString(16);
+ii.style.color="#"+randomColor;
+var randomColor1 = Math.floor(Math.random()*16777215).toString(16);
+iii.style.color="#"+randomColor1;
+var randomColor2 = Math.floor(Math.random()*16777215).toString(16);
+iiii.style.color="#"+randomColor2;
 var ii=document.getElementById("output1");
 ii.innerHTML="I really really love you";
 var iii=document.getElementById("output2");
 iii.innerHTML="and this is the truth";
 var iiii=document.getElementById("output3");
 iiii.innerHTML="lola + bunny";
-var randomColor = Math.floor(Math.random()*16777215).toString(16);
-ii.style.color="#"+randomColor;
+
 ii.innerHTML="i love you baby very very much.";
 
 fetch(
