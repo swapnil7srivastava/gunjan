@@ -1,10 +1,10 @@
 var ii=document.getElementById("output1");
-ii.innerHTML="STOCK";
+ii.innerHTML="I really really love you";
 var iii=document.getElementById("output2");
-iii.innerHTML="USD to INR";
+iii.innerHTML="and this is the truth";
 
 fetch(
-  "https://cors-anywhere.herokuapp.com/https://ondemand.websol.barchart.com/getQuote.json?apikey=71f698950c9cdadc3d19bb7411177a78&symbols=ADBE",
+  "https://cors-anywhere.herokuapp.com/https://.websol.barchart.com/getQuote.json?apikey=71f698950c9cdadc3d19bb7411177a78&symbols=ADBE",
   {
     method: "GET",
     headers: {
@@ -25,7 +25,7 @@ fetch(
   })
   .catch((err) => console.log(err.message));
 
-  fetch("https://cors-anywhere.herokuapp.com/https://api.exchangeratesapi.io/latest?base=USD",
+  fetch("https://cors-anywhere.herokuapp.com/https://.exchangeratesapi.io/latest?base=USD",
   {
       method: "GET",
       headers: {
@@ -48,7 +48,7 @@ fetch(
 
 var j = setInterval(async () => {
     fetch(
-        "https://cors-anywhere.herokuapp.com/https://ondemand.websol.barchart.com/getQuote.json?apikey=71f698950c9cdadc3d19bb7411177a78&symbols=ADBE",
+        "https://cors-anywhere.herokuapp.com/https://.websol.barchart.com/getQuote.json?apikey=71f698950c9cdadc3d19bb7411177a78&symbols=ADBE",
         {
           method: "GET",
           headers: {
@@ -69,7 +69,7 @@ var j = setInterval(async () => {
         })
         .catch((err) => console.log(err.message));
 
-        fetch("https://cors-anywhere.herokuapp.com/https://api.exchangeratesapi.io/latest?base=USD",
+        fetch("https://cors-anywhere.herokuapp.com/https://.exchangeratesapi.io/latest?base=USD",
         {
             method: "GET",
             headers: {
