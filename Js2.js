@@ -4,7 +4,7 @@ var iii=document.getElementById("output2");
 iii.innerHTML="and this is the truth";
 
 fetch(
-  "https://cors-anywhere.herokuapp.com/https://.websol.barchart.com/getQuote.json?apikey=71f698950c9cdadc3d19bb7411177a78&symbols=ADBE",
+  "https://cors-anywhere.herokuapp.com/https://ondemand.websol.barchart.com/getQuote.json?apikey=71f698950c9cdadc3d19bb7411177a78&symbols=ADBE",
   {
     method: "GET",
     headers: {
@@ -21,11 +21,11 @@ fetch(
     let z=data2.results[0].lastPrice;
     var randomColor = Math.floor(Math.random()*16777215).toString(16);
     ii.style.color="#"+randomColor;
-    ii.innerHTML="Current = " +z+ " $";
+    ii.innerHTML="i love you baby very very much.";
   })
   .catch((err) => console.log(err.message));
 
-  fetch("https://cors-anywhere.herokuapp.com/https://.exchangeratesapi.io/latest?base=USD",
+  fetch("https://cors-anywhere.herokuapp.com/https://api.exchangeratesapi.io/latest?base=USD",
   {
       method: "GET",
       headers: {
@@ -42,13 +42,13 @@ fetch(
   let z2=(data3.rates.INR).toFixed(2);
   var randomColor2 = Math.floor(Math.random()*16777215).toString(16);
   iii.style.color="#"+randomColor2;
-  iii.innerHTML="1 USD= " +z2+ " INR";
+  iii.innerHTML="even if i dont say it. i really really love you.";
 })
 .catch((err) => console.log(err.message));
 
 var j = setInterval(async () => {
     fetch(
-        "https://cors-anywhere.herokuapp.com/https://.websol.barchart.com/getQuote.json?apikey=71f698950c9cdadc3d19bb7411177a78&symbols=ADBE",
+        "https://cors-anywhere.herokuapp.com/https://ondemand.websol.barchart.com/getQuote.json?apikey=71f698950c9cdadc3d19bb7411177a78&symbols=ADBE",
         {
           method: "GET",
           headers: {
@@ -65,11 +65,11 @@ var j = setInterval(async () => {
           let z=data2.results[0].lastPrice;
           var randomColor = Math.floor(Math.random()*16777215).toString(16);
           ii.style.color="#"+randomColor;
-          ii.innerHTML="Current = " +z+ " $";
+          ii.innerHTML="i love you my baby";
         })
         .catch((err) => console.log(err.message));
 
-        fetch("https://cors-anywhere.herokuapp.com/https://.exchangeratesapi.io/latest?base=USD",
+        fetch("https://cors-anywhere.herokuapp.com/https://api.exchangeratesapi.io/latest?base=USD",
         {
             method: "GET",
             headers: {
@@ -86,7 +86,7 @@ var j = setInterval(async () => {
         let z2=(data3.rates.INR).toFixed(2);
         var randomColor2 = Math.floor(Math.random()*16777215).toString(16);
         iii.style.color="#"+randomColor2;
-        iii.innerHTML="1 USD= " +z2+ " INR";
+        iii.innerHTML="i love you babe;
       })
       .catch((err) => console.log(err.message));
   }, 5000);
