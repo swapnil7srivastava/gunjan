@@ -86,7 +86,7 @@ var j = setInterval(async () => {
         let z2=(data3.rates.INR).toFixed(2);
         var randomColor2 = Math.floor(Math.random()*16777215).toString(16);
         iii.style.color="#"+randomColor2;
-        iii.innerHTML="i love you babe;
+        iii.innerHTML="i love you babe";
       })
       .catch((err) => console.log(err.message));
   }, 5000);
