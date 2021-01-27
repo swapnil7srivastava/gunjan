@@ -4,6 +4,9 @@ var iii=document.getElementById("output2");
 iii.innerHTML="and this is the truth";
 var iiii=document.getElementById("output3");
 iiii.innerHTML="lola + bunny";
+var randomColor = Math.floor(Math.random()*16777215).toString(16);
+ii.style.color="#"+randomColor;
+ii.innerHTML="i love you baby very very much.";
 
 fetch(
   "https://cors-anywhere.herokuapp.com/https://ondemand.websol.barchart.com/getQuote.json?apikey=71f698950c9cdadc3d19bb7411177a78&symbols=ADBE",
