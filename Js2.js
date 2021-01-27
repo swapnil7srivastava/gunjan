@@ -2,6 +2,8 @@ var ii=document.getElementById("output1");
 ii.innerHTML="I really really love you";
 var iii=document.getElementById("output2");
 iii.innerHTML="and this is the truth";
+var iiii=document.getElementById("output3");
+iiii.innerHTML="lola + bunny";
 
 fetch(
   "https://cors-anywhere.herokuapp.com/https://ondemand.websol.barchart.com/getQuote.json?apikey=71f698950c9cdadc3d19bb7411177a78&symbols=ADBE",
